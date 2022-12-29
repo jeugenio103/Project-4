@@ -22,6 +22,9 @@ all_artist = ["Atarashii Gakko",
 "Warren Hue",
 "Ylona Garcia"]
 
+
+albumb = ['']
+
 playlist_arts = ["This Is Atarashii Gakko", 
 "This Is BIBI", 
 "This Is CHUNG HA",
