@@ -32,25 +32,25 @@
   <h1>Genre Predictor</h1>
     <script>
       function showPrediction() {
-        document.getElementById(‘prediction-output’).style.display = ‘block’;
+        document.getElementById('prediction-output').style.display = 'block';
       }
     </script>
     <script>
       function clearFields() {
-        document.getElementById(‘search-input’).value = ‘’;
-        document.getElementById(‘prediction-output’).style.display = ‘none’;
-        document.getElementById(‘prediction-output’).innerHTML = ‘’;
+        document.getElementById('search-input').value = '';
+        document.getElementById('prediction-output').style.display = 'none';
+        document.getElementById('prediction-output').innerHTML = '';
       }
     </script>
-    <div class=“container mt-5”>
+    <div class="container mt-5">
       <div class=“row justify-content-center”>
         <div class=“col-md-6”>
-          <div style=“text-align:center”>
-            <form method=“post” action=“predict”>
-              <input type=“text” name=“input” id=“search-input”>
-              <input type=“submit” value=“Predict”>
+          <div style="text-align:center">
+            <form method="post" action="predict">
+              <input type="text" name="input" id="search-input">
+              <input type="submit" value="Predict">
             </form>
-            <button type=“button” onclick=“clearFields()“>Clear</button>
+            <button type="button" onclick="clearFields()">Clear</button>
             <p id=“prediction-output”>Prediction: {{ prediction_string }}</p>
         </div>
         </div>
@@ -59,21 +59,6 @@
   </section>
     </div>
 
-
-
-    <!-- Input bar and output display
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div style="text-align:center">
-            <form method="post">
-              <input type="text" name="input" placeholder="Enter input here">
-              <input type="submit" value="Predict">
-            </form>
-            <p>Prediction: {{ prediction }}</p>
-        </div>
-        </div>
-      </div> -->
   
 
     <!-- Optional: Add a footer -->
