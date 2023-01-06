@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>My Page</title>
+    <title>Test</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -29,26 +29,35 @@
       </div>
     </nav>
 
-    <!-- Input bar and output display -->
+    <script>
+      function showPrediction() {
+        document.getElementById('prediction-output').style.display = 'block';
+      }
+    </script>
+    
+    <script>
+      function clearFields() {
+        document.getElementById('search-input').value = '';
+        document.getElementById('prediction-output').style.display = 'none';
+        document.getElementById('prediction-output').innerHTML = '';
+      }
+    </script>
+    
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Enter input here">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button">Go</button>
-            </div>
-          </div>
           <div style="text-align:center">
-            <form method="post">
-              <input type="text" name="input">
+            <form method="post" action="/predict">
+              <input type="text" name="input" id="search-input">
               <input type="submit" value="Predict">
             </form>
-            <p>Prediction: {{ prediction_decoded }}</p>
+            <button type="button" onclick="clearFields()">Clear</button>
+            <p id="prediction-output">Prediction: {{ prediction_string }}</p>
         </div>
         </div>
       </div>
     </div> 
+    
 
     <!-- Optional: Add a Tableau embedded HTML page and an "About Us" page -->
 
@@ -56,5 +65,3 @@
 
     <!-- Optional: Add scripts at the end of the body -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj
-
-
