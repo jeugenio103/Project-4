@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="block glow">
+
+      <section class="header">
+        <nav>
+          <div class="nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="visualization.html">Visualizations</a></li>
+              <li><a href="lyrics_analysis.html">Lyrics Analysis</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+
+<!-- Input bar and output display -->
+<div class="text-box">
+  <h1>Genre Predictor</h1>
+    <script>
+      function showPrediction() {
+        document.getElementById(‘prediction-output’).style.display = ‘block’;
+      }
+    </script>
+    <script>
+      function clearFields() {
+        document.getElementById(‘search-input’).value = ‘’;
+        document.getElementById(‘prediction-output’).style.display = ‘none’;
+        document.getElementById(‘prediction-output’).innerHTML = ‘’;
+      }
+    </script>
+    <div class=“container mt-5”>
+      <div class=“row justify-content-center”>
+        <div class=“col-md-6”>
+          <div style=“text-align:center”>
+            <form method=“post” action=“predict”>
+              <input type=“text” name=“input” id=“search-input”>
+              <input type=“submit” value=“Predict”>
+            </form>
+            <button type=“button” onclick=“clearFields()“>Clear</button>
+            <p id=“prediction-output”>Prediction: {{ prediction_string }}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    </div>
+
+
+
+    <!-- Input bar and output display
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div style="text-align:center">
+            <form method="post">
+              <input type="text" name="input" placeholder="Enter input here">
+              <input type="submit" value="Predict">
+            </form>
+            <p>Prediction: {{ prediction }}</p>
+        </div>
+        </div>
+      </div> -->
+  
+
+    <!-- Optional: Add a footer -->
+
+    <!-- Optional: Add scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj
