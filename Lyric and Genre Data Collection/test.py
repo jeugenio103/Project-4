@@ -1,8 +1,17 @@
 from flask import Flask, request, render_template
 import pandas as pd
-import spotipy
-from tensorflow import keras
-from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+from tensorflow import keras 
+import tensorflow as tf
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.preprocessing import OneHotEncoder
+import numpy as np
+import keras_tuner as kt
+import sklearn as skl
+import spotipy 
+import numpy as np
+from spotipy.oauth2 import SpotifyClientCredentials
+
 
 
 app = Flask(__name__)
