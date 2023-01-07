@@ -31,48 +31,49 @@
     </section>
 
     <div class="lyric-container">
-        <div class="search-bar">
-            <div id="select">
-                <p id="selectText">All Artists</p>
-                <img src="arrow.png">
-                <ul id="list">
-                    <li class="options">All Artists</li>
-                    <li class="options">BIBI</li>
-                    <li class="options">CHUNG HA</li>
-                    <li class="options">Dumbfounded</li>
-                    <li class="options">Guapdad 4000</li>
-                    <li class="options">Jackson Wang</li>
-                    <li class="options">Joji</li>
-                    <li class="options">Lexi Liu</li>
-                    <li class="options">Mili</li>
-                    <li class="options">Keith Ape</li>
-                    <li class="options">Rich Brian</li>
-                    <li class="options">Seori</li>
-                    <li class="options">Stephanie Poetri</li>
-                    <li class="options">Warren Hue</li>
-                </ul>
-            </div>
-            <input type="text" id="inputfield" placeholder="Search All Artists">
+      <div class="search-bar">
+        <div id="select">
+          <p id="selectText">All Artists</p>
+          <img src="arrow.png">
+          <ul id="list" style="overflow-y:scroll;">
+            <li class="options">All Artists</li>
+            <li class="options">BIBI</li>
+            <li class="options">CHUNG HA</li>
+            <li class="options">Dumbfounded</li>
+            <li class="options">Guapdad 4000</li>
+            <li class="options">Jackson Wang</li>
+            <li class="options">Joji</li>
+            <li class="options">Lexi Liu</li>
+            <li class="options">Mili</li>
+            <li class="options">Keith Ape</li>
+            <li class="options">Rich Brian</li>
+            <li class="options">Seori</li>
+            <li class="options">Stephanie Poetri</li>
+            <li class="options">Warren Hue</li>
+          </ul>
         </div>
+        <input type="text" id="inputfield" placeholder="Search All Artists">
+      </div>
     </div>
-
-<script>
-  let select = document.getElementById("select");
-  let list = document.getElementById("list");
-  let selectText = document.getElementById("selectText");
-  let inputfield = document.getElementById("inputfield");
-  let options = document.getElementsByClassName("options");
-
-  select.onclick = function(){
-    list.classList.toggle("open");
-  }
-  for (option of options){
-    option.onclick = function(){
-      selectText.innerHTML = this.innerHTML;
-      inputfield.placeholder = "Search In " + selectText.innerHTML;
-    }
-}
-</script>
+    
+    <script>
+      let select = document.getElementById("select");
+      let list = document.getElementById("list");
+      let selectText = document.getElementById("selectText");
+      let inputfield = document.getElementById("inputfield");
+      let options = document.getElementsByClassName("options");
+    
+      select.onclick = function(){
+        list.classList.toggle("open");
+      }
+      for (option of options){
+        option.onclick = function(){
+          selectText.innerHTML = this.innerHTML;
+          inputfield.placeholder = "Search In " + selectText.innerHTML;
+        }
+      }
+    </script>
+    
       <!-- Add more categories and options here -->
     </div>
   </form>
