@@ -34,6 +34,17 @@ app = Flask(__name__)
 def test():
     return render_template('test.html')
 
+@app.route('/test_visual')
+def test_visual():
+    return render_template('test_visual.html')
+
+@app.route('/test_lyrics')
+def test_lyrics():
+    return render_template('test_lyrics.html')
+
+@app.route('/test_about')
+def test_about():
+    return render_template('test_about.html')
 
 @app.route('/predict', methods=['GET','POST'])
 def predict():
@@ -42,13 +53,15 @@ def predict():
         track_name = request.form.get('input')
 
         if track_name:
+            # Initialize the df2 variable
+            df2 = None
             # Search for the track
             results = sp.search(q=track_name, type="track", limit=1)
-
             # Get the first track from the search results
             track = results["tracks"]["items"][0]
             # Get the track's audio features
             features = sp.audio_features(track["id"])[0]
+
             # Create a Pandas DataFrame with one row
             df2 = pd.DataFrame([features])
 
@@ -58,10 +71,13 @@ def predict():
             X_scaled = X_scaler.fit_transform(model_X)
             X_scaled = X_scaled.reshape(-1, 13)
 
+            # Load the model and make a prediction
             model = keras.models.load_model('test_model.h5')
-            prediction = model.predict(X_scaled)
 
+            prediction = model.predict(X_scaled)
+            # Decode the prediction
             prediction_index = np.argmax(prediction, axis=1)
+    
             y_original = y_train
 
             prediction_decoded = [y_original[prediction_index[i]] for i in range(prediction_index.shape[0])]

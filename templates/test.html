@@ -4,62 +4,80 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <title>My Page</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <title>Test</title>
+    <link rel="stylesheet" href="static/test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">My Page</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Tableau</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <script>
-      function showPrediction() {
-        document.getElementById('prediction-output').style.display = 'block';
-      }
-    </script>
-    
-    <script>
-      function clearFields() {
-        document.getElementById('search-input').value = '';
-        document.getElementById('prediction-output').style.display = 'none';
-        document.getElementById('prediction-output').innerHTML = '';
-      }
-    </script>
-    
-    <div class="container mt-5">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div style="text-align:center">
-            <form method="post" action="/predict">
-              <input type="text" name="input" id="search-input">
-              <input type="submit" value="Predict">
-            </form>
-            <button type="button" onclick="clearFields()">Clear</button>
-            <p id="prediction-output">Prediction: {{ prediction_string }}</p>
+    <div class="block glow">
+      <section class="header">
+        <nav>
+          <div class="nav-links">
+            <ul>
+              <li><a href="{{ url_for('test') }}">Home</a></li>
+              <li><a href="{{ url_for('test_visual') }}">Visualizations</a></li>
+              <li><a href="{{ url_for('test_lyrics') }}">Lyrics Analysis</a></li>
+              <li><a href="{{ url_for('test_about') }}">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+    </section>
+<!-- Input bar and output display -->
+    <div class="text-box">
+      <h1>Genre Predictor</h1>
+      <script>
+        function showPrediction() {
+          document.getElementById('prediction-output').style.display = 'block';
+        }
+        
+        function clearFields() {
+          document.getElementById('search-input').value = '';
+          document.getElementById('prediction-output').innerHTML = '';
+          document.getElementById('h4-output').innerHTML = '';
+        }
+      </script>
+      <style>
+        #prediction-output {
+          font-size: 25px;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 5px;
+        }
+        .clear-button {
+          float: center;
+        }
+        h4 {
+          font-size: 30px;
+          font-family: Serif;
+          padding-top: 20px;
+        }
+      </style>
+​
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div style="text-align:center">
+              <form method="post" action="predict">
+                <input type="text" name="input" id="search-input" placeholder="Enter Track Name">
+                <input type="submit" value="Predict">
+              </form>
+              <h4 id="h4-output">{{ input }}</h4>
+              <p>Prediction: <span id="prediction-output">{{ prediction_string }}</span></p>
+            </div>
+          </div>
         </div>
-        </div>
       </div>
-    </div> 
-    
+      <button type="button" class="clear-button" onclick="clearFields()">Clear</button>
 
-    <!-- Optional: Add a Tableau embedded HTML page and an "About Us" page -->
+    
+    </div>
+    </div>
+  </body>
+  
 
     <!-- Optional: Add a footer -->
 
