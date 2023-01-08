@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <section class="lyric-header">
+        <nav>
+          <div class="lyric-nav-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="lyric_gen.html">Lyric Generator</a></li>
+              <li><a href="visualization.html">Visualizations</a></li>
+              <li><a href="lyrics_analysis.html">Lyrics Analysis</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="lyric-text-box">
+            <h1>Lyric Generator</h1>
+          </div>
+    </section>
+
+    <div class="lyric-container">
+        <div class="search-bar">
+            <div id="select">
+                <p id="selectText">Select Artist</p>
+                <img src="arrow.png">
+                <ul id="list" style="overflow-y: scroll;">
+                    <li class="options">Select Artist</li>
+                    <li class="options">BIBI</li>
+                    <li class="options">CHUNG HA</li>
+                    <li class="options">Dumbfounded</li>
+                    <li class="options">Guapdad 4000</li>
+                    <li class="options">Jackson Wang</li>
+                    <li class="options">Joji</li>
+                    <li class="options">Lexi Liu</li>
+                    <li class="options">Mili</li>
+                    <li class="options">Keith Ape</li>
+                    <li class="options">Rich Brian</li>
+                    <li class="options">Seori</li>
+                    <li class="options">Stephanie Poetri</li>
+                    <li class="options">Warren Hue</li>
+                </ul>
+            </div>
+            <input type="text" id="inputfield" placeholder="Type in Topic">
+        </div>
+    </div>
+
+<script>
+  let select = document.getElementById("select");
+  let list = document.getElementById("list");
+  let selectText = document.getElementById("selectText");
+  let inputfield = document.getElementById("inputfield");
+  let options = document.getElementsByClassName("options");
+
+  select.onclick = function(){
+    list.classList.toggle("open");
+  }
+  for (option of options){
+    option.onclick = function(){
+      selectText.innerHTML = this.innerHTML;
+      inputfield.placeholder = "Search In " + selectText.innerHTML;
+    }
+}
+</script>
+      <!-- Add more categories and options here -->
+    </div>
+  </form>
+</div>
+
+<!-- Input bar and output display -->
+    </div>
+  </body>
+  
+
+    <!-- Optional: Add a footer -->
+
+    <!-- Optional: Add scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj
