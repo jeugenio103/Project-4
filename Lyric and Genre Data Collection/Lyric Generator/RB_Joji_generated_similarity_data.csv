@@ -1,0 +1,23 @@
+,artist,lyrics,ratio_same_words,list_same_words
+0,Rich Brian,"If I want the hype, I'll get the hype (Uh)",0.3333333333333333,"['want', 'get']"
+1,Rich Brian,"If I want the money, well, then I'ma get the money (Uh)",0.42857142857142855,"['want', 'get', 'money']"
+2,Rich Brian,If I want a bad bitch then I'ma get a bad bitch (Uh),0.75,"['want', 'bad', 'bitch', 'get', 'bad', 'bitch']"
+3,Rich Brian,I don't need your opinion 'cause this ain't about you (About you),0.16666666666666666,['need']
+4,Rich Brian,"I was born in ' , but I'm living in ' now (Now)",0.14285714285714285,['born']
+5,Rich Brian,"You don't know me, bitch just follow what they own'Cause it's no time for your scumbag attitude",0.5,"['know', 'bitch', 'time', 'attitude']"
+6,Rich Brian,I'm so focused on where I'm going that my eyes are closed'Cause I don't need to see the road when I've rode it so many times(So many times),0.5333333333333333,"['focused', 'going', 'eyes', 'need', 'see', 'road', 'many', 'many']"
+7,Rich Brian,When you ready for me then let me know (Let me know),0.6,"['ready', 'let', 'know']"
+8,Rich Brian,When you ready to drop then let me show (Show),0.8,"['ready', 'drop', 'let', 'show']"
+9,Rich Brian,When you ready for this shit then let's go (Let's go),0.5,"['ready', 'shit', 'go']"
+10,Rich Brian,"Fuck what these niggas talk'Cause when they see us they know it's hype time(Hype time, hype time, hype time, hype time)",0.3333333333333333,"['fuck', 'niggas', 'see', 'us', 'know']"
+0,Joji,"You left me here, I'm in the dark",0.5,"['left', 'dark']"
+1,Joji,"I played your song, it reminded me of us",0.25,['us']
+2,Joji,Now I'm reminiscing on the past,0.3333333333333333,['past']
+3,Joji,You said that you were leaving and I didn't react(I didn't react),0.25,['said']
+4,Joji,I trusted you like a fool with my young energy(Young energy),0.16666666666666666,['like']
+5,Joji,You played me like a pro with your old tricks(Old tricks),0.16666666666666666,['like']
+6,Joji,So why did I believe?(Why did I believe?),0.0,[]
+7,Joji,"Ooh, ooh-ooh-ooh-ooh, ooh-ooh-ooh-ooh-ooh-ooh-ooh, ooh-ooh (Why?)",0.0,[]
+8,Joji,"Ooh, ooh-ooh-ooh-ooh, ooh (What was it for?)",0.2,['ooh']
+9,Joji,"Ooh, oohl (I still wanna know what went through your mind)",0.375,"['still', 'wanna', 'know']"
+10,Joji,Oohl (When you told me you were leaving and you wouldn't be back),0.2,['told']
