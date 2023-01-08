@@ -1,0 +1,49 @@
+,song name,album,artist,featured,release_date,length(ms),popularity,acousticness,danceability,energy,liveness,tempo,valence
+0,Keeping Tabs,Nicole,NIKI,['NIKI'],2022-08-12,177720,65,0.0892,0.651,0.627,0.0941,169.955,0.441
+1,Oceans & Engines,Oceans & Engines,NIKI,['NIKI'],2022-07-08,336000,71,0.637,0.395,0.309,0.0931,142.012,0.0673
+2,High School in Jakarta,High School in Jakarta,NIKI,['NIKI'],2022-08-05,219036,76,0.527,0.871,0.485,0.169,119.976,0.494
+3,Every Summertime,Every Summertime,NIKI,['NIKI'],2021-08-10,215686,79,0.393,0.628,0.676,0.0978,78.996,0.723
+4,lowkey,lowkey,NIKI,['NIKI'],2019-04-24,171355,77,0.432,0.752,0.494,0.0869,117.901,0.227
+5,I Like U,I Like U,NIKI,['NIKI'],2017-09-27,267732,71,0.071,0.48,0.526,0.0879,199.662,0.374
+6,urs,wanna take this downtown?,NIKI,['NIKI'],2019-05-17,156500,68,0.834,0.72,0.415,0.0893,94.88,0.235
+7,Before,Before,NIKI,['NIKI'],2022-06-03,234057,57,0.485,0.67,0.602,0.119,140.012,0.321
+8,Lose,MOONCHILD,NIKI,['NIKI'],2020-09-10,256001,65,0.846,0.41,0.316,0.124,133.288,0.22
+9,California (feat. Warren Hue),California (feat. Warren Hue),88rising,"['88rising', 'Rich Brian', 'NIKI']",2021-05-27,230395,62,0.633,0.743,0.631,0.0963,141.955,0.428
+10,La La Lost You - Acoustic Version,NIKI Acoustic Sessions: Head In The Clouds II,NIKI,"['NIKI', '88rising']",2019-08-11,208510,70,0.908,0.606,0.196,0.348,100.873,0.391
+11,La La Lost You,Head In The Clouds II,88rising,"['88rising', 'NIKI']",2019-10-11,200000,67,0.315,0.721,0.582,0.065,100.083,0.487
+12,Vintage,Zephyr,NIKI,['NIKI'],2018-05-23,177320,61,0.0114,0.771,0.816,0.339,104.958,0.438
+13,Chilly,Chilly,NIKI,['NIKI'],2017-12-18,230000,57,0.617,0.734,0.271,0.101,103.241,0.237
+14,La Cienega,Head In The Clouds,88rising,"['88rising', 'Joji', 'NIKI']",2018-07-20,192606,59,0.506,0.61,0.318,0.102,109.491,0.214
+15,Split,Split,88rising,"['88rising', 'NIKI']",2021-11-18,207013,63,0.431,0.691,0.509,0.0885,113.961,0.473
+16,Around,Zephyr,NIKI,['NIKI'],2018-05-23,183546,56,0.887,0.485,0.125,0.108,130.234,0.153
+17,Indigo,Head In The Clouds II,88rising,"['88rising', 'NIKI']",2019-10-11,173473,62,0.0958,0.819,0.664,0.263,144.988,0.71
+18,See U Never,See U Never,NIKI,['NIKI'],2017-07-11,221620,54,0.295,0.795,0.735,0.0719,129.982,0.243
+19,odds,wanna take this downtown?,NIKI,['NIKI'],2019-05-17,183271,49,0.441,0.593,0.469,0.141,165.038,0.401
+20,Dancing With The Devil,Zephyr,NIKI,['NIKI'],2018-05-23,162466,50,0.217,0.76,0.558,0.119,102.057,0.462
+21,Pandemonium,MOONCHILD,NIKI,['NIKI'],2020-09-10,227000,48,0.796,0.699,0.515,0.164,78.0,0.517
+22,California (feat. Jackson Wang & Warren Hue) - [Remix],California (feat. Jackson Wang & Warren Hue) [Remix],88rising,"['88rising', 'Rich Brian', 'NIKI']",2021-07-15,273927,52,0.606,0.773,0.629,0.189,141.958,0.589
+23,Strange Land - Acoustic Version,NIKI Acoustic Sessions: Head In The Clouds II,NIKI,"['NIKI', '88rising']",2019-08-11,173419,50,0.915,0.505,0.207,0.126,74.839,0.185
+24,Say My Name,Zephyr,NIKI,['NIKI'],2018-05-23,192453,51,0.331,0.637,0.457,0.0969,149.893,0.314
+25,Plans (feat. Vory),Head In The Clouds,88rising,"['88rising', 'NIKI', 'Vory']",2018-07-20,138390,51,0.145,0.917,0.541,0.0409,101.005,0.752
+26,Little Prince (feat. NIKI),Amen,Rich Brian,"['Rich Brian', 'NIKI']",2018-02-02,172444,49,0.166,0.909,0.414,0.109,139.963,0.761
+27,Shouldn't Couldn't Wouldn't - Acoustic Version,NIKI Acoustic Sessions: Head In The Clouds II,NIKI,"['NIKI', '88rising']",2019-08-11,162000,51,0.911,0.636,0.21,0.0837,76.379,0.25
+28,Newsflash!,Zephyr,NIKI,['NIKI'],2018-05-23,204426,52,0.086,0.734,0.373,0.0913,79.998,0.481
+29,COMING HOME (feat. NIKI),"LET’S JUST SAY THE WORLD ENDED A WEEK FROM NOW, WHAT WOULD YOU DO?",HONNE,"['HONNE', 'NIKI']",2021-10-22,210019,58,0.17,0.826,0.329,0.0927,106.935,0.558
+30,Plot Twist,MOONCHILD,NIKI,['NIKI'],2020-09-09,207213,54,0.648,0.801,0.488,0.0902,96.987,0.357
+31,Shouldn't Couldn't Wouldn't,Head In The Clouds II,88rising,"['88rising', 'NIKI', 'Rich Brian']",2019-10-11,195052,52,0.41,0.454,0.379,0.0837,169.055,0.275
+32,Spell,Zephyr,NIKI,['NIKI'],2018-05-23,226813,49,0.267,0.736,0.359,0.109,132.011,0.414
+33,move!,wanna take this downtown?,NIKI,['NIKI'],2019-05-17,156176,49,0.523,0.829,0.49,0.0861,126.922,0.801
+34,Switchblade,MOONCHILD,NIKI,['NIKI'],2020-09-10,204299,46,0.346,0.694,0.69,0.0397,97.027,0.304
+35,Strange Land,Head In The Clouds II,88rising,"['88rising', 'NIKI', 'Phum Viphurit']",2019-10-11,175733,53,0.903,0.65,0.265,0.115,75.002,0.156
+36,Warpaint,Head In The Clouds,88rising,"['88rising', 'NIKI']",2018-07-20,213787,46,0.082,0.68,0.658,0.109,128.921,0.278
+37,Swan Song,Shang-Chi and The Legend of The Ten Rings: The Album,88rising,"['Saweetie', 'NIKI']",2021-09-03,167586,50,0.0378,0.714,0.587,0.167,151.898,0.542
+38,Drive On,MOONCHILD,NIKI,['NIKI'],2020-09-10,217693,44,0.384,0.681,0.413,0.0978,114.994,0.226
+39,Hallway Weather,Hallway Weather,NIKI,['NIKI'],2020-12-15,233673,46,0.455,0.507,0.359,0.0904,139.561,0.165
+40,Selene,Selene,NIKI,['NIKI'],2020-07-16,197454,47,0.156,0.798,0.504,0.0825,110.022,0.548
+41,Always Rising,Shang-Chi and The Legend of The Ten Rings: The Album,88rising,"['NIKI', 'Rich Brian', 'Warren Hue']",2021-09-03,184080,50,0.28,0.376,0.694,0.102,75.625,0.0399
+42,If There's Nothing Left...,MOONCHILD,NIKI,['NIKI'],2020-09-10,210440,43,0.456,0.499,0.396,0.0946,80.025,0.287
+43,I Want In,Head In The Clouds,88rising,"['88rising', 'AUGUST 08', 'NIKI']",2018-07-20,150295,41,0.42,0.493,0.69,0.126,76.85,0.478
+44,No More (feat. NIKI),Five Stars,Higher Brothers,"['Higher Brothers', 'NIKI']",2019-02-22,229859,38,0.436,0.75,0.651,0.0776,142.118,0.61
+45,Clocked Out!,Shang-Chi and The Legend of The Ten Rings: The Album,88rising,"['AUDREY NUNA', 'NIKI']",2021-09-03,190080,44,0.0351,0.743,0.72,0.287,127.983,0.117
+46,Forever (feat. NIKI),Chameleon,End of the World,"['End of the World', 'NIKI']",2020-11-27,176186,34,0.258,0.582,0.762,0.364,81.009,0.372
+47,Poolside Manor,Head In The Clouds,88rising,"['88rising', 'AUGUST 08', 'NIKI']",2018-07-20,170527,39,0.417,0.588,0.541,0.107,77.478,0.0816

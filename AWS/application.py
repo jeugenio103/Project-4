@@ -48,7 +48,7 @@ def predict():
         from sklearn.preprocessing import StandardScaler 
         from pathlib import Path
         #Loading CSV File 
-        file_path = Path("./Test-Data/equalized_df.csv")
+        file_path = Path("../Test-Data/equalized_df.csv")
         df = pd.read_csv(file_path)
         df=df.drop(columns=["Unnamed: 0","track_id","track","artist","genre","duration_ms"])
         from sklearn.preprocessing import StandardScaler 
@@ -80,7 +80,7 @@ def predict():
 
             df2 = df2.loc[:,["key","mode","time_signature","acousticness","danceability","energy","instrumentalness","liveness","loudness","speechiness","valence","tempo"]]
 
-            pickled_model = pickle.load(open('./Lyric and Genre Data Collection/Machine Learning Models/svm_model.pkl', 'rb'))
+            pickled_model = pickle.load(open('../Lyric and Genre Data Collection/Machine Learning Models/svm_model.pkl', 'rb'))
             df2_scaled = scaler.transform(df2)
 
             prediction = pickled_model.predict(df2_scaled)
