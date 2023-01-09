@@ -38,28 +38,9 @@ List the ready features here:
 - 
 
 ## Music Analysis
-Gather Spotify Music Features that go into select genres
-Acousticness
-Duration_ms
-Instrumentalness
-Key
-Loudness
-Mode
-Speechiness
-Tempo
-Time_signature
-Valence
-'Popularity'
-,'featured',
-'Release_date',
-'Track_id',
- 'danceability', 
-'energy', 'key',
- 'loudness', 
-'mode', 
-'Speechiness',
- 'Instrumentalness',
- 'liveness', 'valence', 'tempo', 'duration_ms', 'time_signature']
+Gather Spotify Music Features that go into select genres:<br>
+Acousticness, Duration_ms, Instrumentalness, Key, Loudness, Mode
+Speechiness, Tempo, Time_signature, Valence, Popularity, featured, danceability, energy, key, loudness, mode, Speechiness, liveness
 
 ## Conclusions
 
