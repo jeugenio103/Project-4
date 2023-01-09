@@ -51,5 +51,4 @@ https://www.activestate.com/blog/how-to-build-a-lyrics-generator-with-python-rec
 https://www.twilio.com/blog/generating-lyrics-in-the-style-of-your-favorite-artist-with-python-openai-s-gpt-3-and-twilio-sms<br>
 https://marianaossilva.github.io/DSW2019/index.html<br>
 https://github.com/johnwmillr/LyricsGenius<br>
-^^^ An api to extra lyrics from genius.com<br>
 https://www.analyticsvidhya.com/blog/2020/10/feature-selection-techniques-in-machine-learning/<br><br>
