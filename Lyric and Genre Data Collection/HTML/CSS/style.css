@@ -73,7 +73,7 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 50px 30px;
+    padding: 50px 20px;
     position: relative;
 }
 
@@ -694,7 +694,7 @@ html {
   }
 
 .card {
-    width: 230px;
+    width: 250px;
     height: 350px;
     padding: 2rem 1rem;
     background: #fff;
@@ -753,6 +753,7 @@ html {
 
 .card .info h2{
     margin:0;
+    font-size: 20px;
 }
 
 .card .info p{
@@ -778,7 +779,8 @@ html {
 .wrapper_la {
     display: flex;
     width: 70%;
-    justify-content: start;
+    justify-content: center;
+    padding-bottom: 20px;
   }
   
 
@@ -863,7 +865,7 @@ html {
 
 .card_text{
     width: 280px;
-    height:560px;
+    height:auto;
     padding: 2rem 1rem;
     background: 0;
     position: relative;
@@ -875,9 +877,14 @@ html {
 
 .card_text .info_text h4{
     font-size: 12.5px;
+    color: rgb(201, 61, 154);
 }
 
 .la-visuals{
     display: flex;
     justify-content: center;
+}
+
+.card_text .info_text h2{
+    color: rgba(0,176,155,0.9);
 }
