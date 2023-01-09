@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="block glow">
+      <section class="header">
+        <nav>
+          <div class="nav-links">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="visualization">Visualizations</a></li>
+              <li><a href="lyrics_analysis">Lyrics Analysis</a></li>
+              <li><a href="about">About Us</a></li>
+            </ul>
+          </div>
+        </nav>
+    </section>
+<!-- Input bar and output display -->
+    <div class="text-box">
+    <h1>Genre Predictor</h1>
+      <script>
+        function showPrediction() {
+          document.getElementById('prediction-output').style.display = 'block';
+        }
+      </script>
+      <script>
+        function clearFields() {
+          document.getElementById('search-input').value = '';
+          document.getElementById('prediction-output').style.display = 'none';
+          document.getElementById('prediction-output').innerHTML = '';
+        }
+      </script>
+      <style>
+        #prediction-output {
+          font-size: 35px;
+          font-weight: bold;
+          text-align: center;
+          padding-left: 15px;
+        }
+
+        p{
+          padding-top: 15px;
+          font-size: 25px;
+          font-weight: bold
+        } 
+
+      /* Search Bar */
+      .text-box{
+          width: 90%;
+          font-size: 20px;
+          color: #fff;
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          text-align: center;
+      }
+
+      .text-box h1{
+          font-size: 120px;
+          color: transparent;
+          -webkit-background-stroke: 1px #fff;
+          background: url(static/soundwave.jpeg);
+          -webkit-background-clip: text;
+          background-position: 0 0;
+          animation: back 15s linear infinite;
+      }
+
+      .container-1{
+          width: 100%;
+          max-height: auto;
+          /* background-image: url(static/search.png); */
+          background-position: center;
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      form{
+          width: 750px;
+          height: 55px;
+          display: flex;
+      }
+
+      form input{
+          flex: 1;
+          border: none;
+          outline: none;
+          font-size: 20px;
+      }
+
+      form button{
+          background: rgb(99, 98, 98);
+          padding: 10px 15px;
+          border: none;
+          outline: none;
+          color: white;
+          letter-spacing: 1px;
+          cursor: pointer;
+          font-size: 20px;
+          border-radius: 4px;
+          margin-left: 2px;
+      }
+
+      /* .search-bar-1{
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          left: 48%;
+          transform: translate(-0%,-50%);
+          align-items: center;
+          width: 90%;
+          max-width: 700px;
+          display: flex;
+          padding: 20px 5px;
+          border-radius: 4px;
+      } */
+
+      #search-bar-1-input{
+          flex: 1;
+          padding: 10px 25px;
+          width: 100%;
+          border: none;
+          outline: none;
+          font-size: 18px;
+          color:#000;
+      }
+
+      #button-submit img{
+          width: 25px;
+          margin-left: 5px;
+      }
+      .header{
+          width: 100%;
+          height: 99.25vh;
+          background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(static/headphone2.jpeg);
+          background-position: center;
+          background-size: cover;
+          position: relative;
+      }
+      </style>
+      <div class="container-1"> 
+      <!-- <div class=“row justify-content-center”> -->
+      <div class="search-bar-1">
+          <form method="post" action="predict">
+            <input type="text" placeholder="Search Name of Song" name="input">
+            <button type="submit" id="button-submit">Predict<img src="static/search.png"></button>
+            <!-- <input type="submit" id="button-submit" value="Predict"> -->
+            <button type="button" onclick="clearFields()">Clear</button>
+          </form>
+          <p>Prediction: <span id="prediction-output">{{ prediction_string }}</span></p>
+      </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  
+
+    <!-- Optional: Add a footer -->
+
+    <!-- Optional: Add scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj

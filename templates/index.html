@@ -40,28 +40,26 @@
 
     <style> 
       #prediction-output {
-      font-size: 35px;
-      font-weight: bold;
-      text-align: center;
-      padding-left: 15px;
-    }
-    p{
-      padding-top: 15px;
-      font-size: 25px;
-      font-weight: bold
-    }</style>
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 15px;
+        }
+      p{
+        padding-top: 15px;
+        font-size: 25px;
+        font-weight: bold
+      }
+    </style>
 
-    <div class="container-1"> 
-      <!-- <div class=“row justify-content-center”> -->
-        <div class=“search-bar-1”>
+        <div class="container-1"> 
             <form method="post" action="predict">
               <input type="text" placeholder="Search Name of Song" name="input">
               <button type="submit" id="button-submit">Predict<img src="static\search.png"></button>
               <!-- <input type="submit" id="button-submit" value="Predict"> -->
             </form>
-            <p>Prediction: <span id=“prediction-output”>{{ prediction_string }}</span></p>
-          </div>
         </div>
+        <p>Prediction: <span id="prediction-output">{{ prediction_string }}</span></p>
       </div>
     </div>
 </body>
