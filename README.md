@@ -21,7 +21,7 @@ Group Members:  Jeremiah Eugenio, Emilio Guzman, Kristy Le, Samantha Seng, Evely
 ## Table of Contents
 * [General Info](#general-information)
 * [Features](#features)
-* [Popularity Analysis](#Popularity-Analysis)
+* [Music Analysis](#Music-Analysis)
 * [Conclusion](#Conclusion)
 * [Resources](#Resources)
 * [Acknowledgements](#acknowledgements)
@@ -37,6 +37,29 @@ List the ready features here:
 - 
 - 
 
+## Music Analysis
+Gather Spotify Music Features that go into select genres
+Acousticness
+Duration_ms
+Instrumentalness
+Key
+Loudness
+Mode
+Speechiness
+Tempo
+Time_signature
+Valence
+'Popularity'
+,'featured',
+'Release_date',
+'Track_id',
+ 'danceability', 
+'energy', 'key',
+ 'loudness', 
+'mode', 
+'Speechiness',
+ 'Instrumentalness',
+ 'liveness', 'valence', 'tempo', 'duration_ms', 'time_signature']
 
 ## Conclusions
 
