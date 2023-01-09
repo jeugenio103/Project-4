@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body>
+<body>
     <div class="block glow">
       <section class="header">
         <nav>
@@ -42,26 +42,18 @@
         document.getElementById('prediction-output').innerHTML = '';
       }
     </script>
-    <div class="container mt-5">
-      <div class=“row justify-content-center”>
-        <div class=“col-md-6”>
-          <div style="text-align:center">
+    <div class="container-1"> 
+      <!-- <div class=“row justify-content-center”> -->
+        <div class=“search-bar-1”>
             <form method="post" action="predict">
-              <input type="text" name="input" id="search-input">
-              <input type="submit" value="Predict">
+              <input type="text" placeholder="Search Name of Song" name="input">
+              <button type="submit" id="button-submit">Predict<img src="search.png"></button>
+              <!-- <input type="submit" id="button-submit" value="Predict"> -->
+              <button type="button" onclick="clearFields()">Clear</button>
             </form>
-            <button type="button" onclick="clearFields()">Clear</button>
             <p id=“prediction-output”>Prediction: {{ prediction_string }}</p>
         </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-  </body>
-  
-
-    <!-- Optional: Add a footer -->
-
-    <!-- Optional: Add scripts at the end of the body -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj
+</body>
