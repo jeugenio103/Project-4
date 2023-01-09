@@ -17,13 +17,15 @@ import spotipy
 import numpy as np
 from spotipy.oauth2 import SpotifyClientCredentials
 
+import sys
 
 client_credentials_manager = SpotifyClientCredentials(client_id,client_secret)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 
 
-application = Flask(__name__,template_folder='templates')
+application = Flask(__name__,template_folder='templates',static_url_path='/static')
+
 @application.route('/')
 def home():
     return render_template('index.html')
@@ -35,6 +37,10 @@ def visualization():
 @application.route('/lyrics_analysis')
 def lyrics_analysis():
     return render_template('lyrics_analysis.html')
+
+@application.route('/lyric_gen')
+def lyric_gen():
+    return render_template('lyric_gen.html')
 
 @application.route('/about')
 def about():
@@ -98,6 +104,79 @@ def predict():
 
     else:
         return render_template('index.html')
+
+@application.route('/lyric', methods=['GET','POST'])
+def lyric():
+    topic = request.form["topic"]
+    artist = request.form["artist1"]
+    from openai_key import key 
+    
+    prompt_text = "Artist: {} \n\nTopic: {} \n\nLyrics:\n".format(artist, topic)
+
+    import openai
+    openai.api_key = key
+    response = openai.Completion.create(
+    model="davinci:ft-personal-2023-01-05-06-24-18",
+    prompt=prompt_text,
+    max_tokens=256,
+    temperature=0.7,
+    frequency_penalty=0.5,
+    stop=["\n###END"]
+)
+
+    lyric_string = "".join(response['choices'][0]['text'])
+
+    
+    def format_lyrics(lyrics):
+        from string import ascii_letters, punctuation
+        nl_char_after = "])"
+        nl_char_before = "["
+        
+        allowed = set(ascii_letters)
+        allowed_punc = set(punctuation)
+        allowed |= allowed_punc
+        allowed |= set(" ")
+        
+        lyric_str = ""
+        prev_char = ""
+        for char in lyrics:
+            if char in allowed:
+                if char in nl_char_after:
+                    lyric_str = lyric_str + char + "\n"
+                elif char in nl_char_before or ((prev_char not in allowed) and char.isupper()):
+                    lyric_str = lyric_str + "\n" + char
+                else:
+                    lyric_str = lyric_str + char
+                prev_char = char
+            else:
+                prev_char = char
+
+        new_str = ""
+        for index in range(0, len(lyric_str)):
+            if lyric_str[index] == '#':
+                break
+            if index+1 == len(lyric_str):
+                new_str = new_str + lyric_str[index]
+                break
+            else:
+                prev = lyric_str[index]
+                after = lyric_str[index+1]
+                if prev in allowed_punc or prev == " ":
+                    new_str = new_str + prev
+                elif prev.islower() and after.isupper():
+                    new_str = new_str + prev + "\n"
+                else:
+                    new_str = new_str + prev
+        # Remove any double spaces
+        import re
+        new_str = re.sub(' +', ' ', new_str)
+        return new_str
+    import string
+    lyric_array = format_lyrics(lyric_string)
+    lyric_array = lyric_array.split('\n')
+    return render_template('lyric_gen.html', topic=topic, lyric_string=lyric_array, artist=artist)
+
+
 
 
 if __name__ == '__main__':
