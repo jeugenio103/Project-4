@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css')}}" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <section class="lyric-header">
+        <nav>
+          <div class="lyric-nav-links">
+            <ul>
+              <li><a href="/">Genre Predictor</a></li>
+              <li><a href="visualization">Music Features</a></li>
+              <li><a href="lyric_gen">Lyric Generator</a></li>
+              <li><a href="lyrics_analysis">Lyrics Analysis</a></li>
+              <li><a href="about">Meet the Team</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="lyric-text-box">
+            <h1>Lyric Generator</h1>
+          </div>
+    </section>
+    <script>
+      function showPrediction() {
+        document.getElementById('lyric-output').style.display = 'block';
+      }
+</script>
+<script>
+  function clearFields() {
+    document.getElementById('search-input').value = '';
+    document.getElementById('lyric-output').style.display = 'none';
+    document.getElementById('lyric-output').innerHTML = '';
+    }
+    </script>
+    <form method="POST" action="/lyric">
+      <div class="lyric-container">
+          <div class="search-bar-2">
+              <div id="select">
+                  <p id="selectText"></p>
+                  <select id="selectText" name="artist1" style="background-color: transparent; color:#fff">
+                    <option value="" style="color: black">Select Artist</option>
+                    <option value="BIBI" style="color: black">BIBI</option>
+                    <option value="CHUNG HA" style="color: black">CHUNG HA</option>
+                    <option value="Dumbfounded" style="color: black">Dumbfounded</option>
+                    <option value="Guapdad 4000" style="color: black">Guapdad 4000</option>
+                    <option value="Jackson Wang" style="color: black">Jackson Wang</option>
+                    <option value="Joji" style="color: black">Joji</option>
+                    <option value="Lexi Liu" style="color: black">Lexi Liu</option>
+                    <option value="Mili" style="color: black">Mili</option>
+                    <option value="Keith Ape" style="color: black">Keith Ape</option>
+                    <option value="Rich Brian" style="color: black">Rich Brian</option>
+                    <option value="Seori" style="color: black">Seori</option>
+                    <option value="Stephanie Poetri" style="color: black">Stephanie Poetri</option>
+                    <option value="Warren Hue" style="color: black">Warren Hue</option>
+                </select>
+            </div>
+              <input type="text" id="inputfield" name = "topic" placeholder="Type in Topic">
+              <button type="submit">Generate</button>
+          </div>
+          
+      </div>
+    </form>
+
+    <div style="margin: 0% 15% 15% 10%; align-items: center; justify-content: center; width: 70%;">
+      <p style="color:rgba(0,176,155,0.9); font-size: 20px;"><b>Generated Lyrics</b></p>
+      <p id="lyric-output" style="color:rgb(201, 61, 154);">Artist: {{ artist }}</p>
+      <p id="lyric-output" style="color:rgb(201, 61, 154);">Topic: {{ topic }}</p>
+      <br>
+      <p><b>Lyrics:</b></p>
+      <div id="lyric-output">
+        {% for line in lyric_string %}
+          <p>{{line}}</p>
+        {% endfor %}
+      </div>
+    </div>
+    
+<script>
+  let select = document.getElementById("select");
+  let list = document.getElementById("list");
+  let selectText = document.getElementById("selectText");
+  let inputfield = document.getElementById("inputfield");
+  let options = document.getElementsByClassName("options");
+
+  select.onclick = function(){
+    list.classList.toggle("open");
+  }
+  for (option of options){
+    option.onclick = function(){
+      selectText.innerHTML = this.innerHTML;
+      inputfield.placeholder = "Search In " + selectText.innerHTML;
+    }
+}
+</script>
+      <!-- Add more categories and options here -->
+    </div>
+  </form>
+</div>
+
+<!-- Input bar and output display -->
+    </div>
+  </body>
+  
+
+    <!-- Optional: Add a footer -->
+
+    <!-- Optional: Add scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj
