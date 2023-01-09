@@ -103,7 +103,7 @@ nav img{
     font-size: 20px;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -119,26 +119,139 @@ nav img{
     animation: back 15s linear infinite;
 }
 
-.container mt-5 {
-padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
+.container-1{
+    width: 100%;
+    max-height: auto;
+    /* background-image: url(HTML/search.png); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.col-md-6 button{
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
+form{
+    width: 750px;
+    height: 55px;
+    display: flex;
 }
+
+form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+form button{
+    background: rgb(99, 98, 98);
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-left: 2px;
+}
+
+.search-bar-1{
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-0%,-50%);
+    align-items: center;
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    padding: 20px 5px;
+    border-radius: 4px;
+}
+
+#search-bar-1-input{
+    flex: 1;
+    padding: 10px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color:#000;
+}
+
+#button-submit img{
+    width: 25px;
+    margin-left: 5px;
+}
+
+/* #button-clear{
+    display: flex;
+    justify-content: space-between;
+    background: #1d2634;
+    color: white;
+    margin-left: 20px;
+    align-items: center;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    padding: 15px 5px;
+    position: absolute; 
+    border-radius: 4px;
+    outline: none;
+} */
+
+/* Clear Button? */
+/* #button-clear{
+    height: 50px;
+    width: 10%;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    top: 85%;
+    left: 90%;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    justify-content: space-between;
+} */
+
+div.container-1 p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+}
+
+    
+/* .col-md-6{
+    background: #646970;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 300px;
+    padding: 25px 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 4px;
+    font-size: 18px;
+} */
+
+/* .search-input{
+    padding: 10px 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+} */
 
 @keyframes back{
     100%{
@@ -467,7 +580,7 @@ html {
     justify-content: center;
 }
 
-.search-bar{
+.search-bar-2{
     background: #fff;
     position: absolute;
     top: 50%;
@@ -518,7 +631,7 @@ html {
     cursor: pointer
 }
 
-.search-bar input{
+.search-bar-2 input{
     padding: 10px 25px;
     width: 100%;
     border: none;
