@@ -20,8 +20,11 @@ Group Members:  Jeremiah Eugenio, Emilio Guzman, Kristy Le, Samantha Seng, Evely
 ## Table of Contents
 * [General Info](#general-information)
 * [Features](#features)
-* [Music Analysis](#Music-Analysis)
-* [Conclusion](#Conclusion)
+* [Genre Predictor](#genre-predictor)
+* [Music Features](#Music-Features)
+* [Lyric Generator](#Lyric-Generator)
+* [Lyric Analysis](#Lyric-Analysis)
+* [Conclusions](#Conclusions)
 * [Resources](#Resources)
 * [Acknowledgements](#acknowledgements)
 <!-- * [License](#license) -->
