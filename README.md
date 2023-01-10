@@ -1,5 +1,5 @@
 # Project #4
-> Project 4 will go through music features that Spotify API provides to visualize the differences within different genres. Incorporate machine learning to train our model to filter through lyrics and identify what genre the lyrics/song is from. Create a lyric generator by putting a word/ genre in and having the generator produce lyrics through the training model.<br><br>
+> Project 4 will go through music features that Spotify API provides to visualize the differences within different genres. Incorporate machine learning to train our model to filter through audio features and identify what genre the song is from. Create a lyric generator by putting a word/ genre in and having the generator produce lyrics through the training model.<br><br>
 	
 ETL:<br>
 Query specific genre playlists from spotify<br>
