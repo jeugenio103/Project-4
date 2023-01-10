@@ -37,6 +37,14 @@ List the ready features here:
 - Genre Predictor
 - Lyric Generator
 
+## Genre Predictor
+We created a Genre Predictor using a Machine Learning Model, Spotify API, and by web scraping the Genius Lyrics website. We created the initial dataframe from the audio features taken by Spotify API and list of genres from web scraping the Genius website. Then we scaled the data and used a SVC Model in order to predict what genre a song would be based on its audio features. The 5 genres we chose to focus on were Pop, R&B, Rock, Country, and Rap. We were able to get about 60% accuracy.
+
+The way the Genre Predictor works is that we input a song in the search bar, it pulls data from the Spotify API to obtain the audio features, then the audio features are used to predict the genre of the song using the model.
+
+Because this is based on audio features, it does have difficulty predicting songs that wouldn’t normally fit in the 5 main genres such as EDM or more Indie Music and also it would have difficulty with songs that have audio feature levels not normally associated with their specific genre. Also, since genres are a bit subjective it would also affect our model. Overall, we could improve our accuracy by utilizing a larger dataset 
+
+
 ## Music Analysis
 Gather Spotify Music Features that go into select genres:<br>
 Acousticness, Duration_ms, Instrumentalness, Key, Loudness, Mode
