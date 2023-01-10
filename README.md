@@ -34,8 +34,8 @@ Group Members:  Jeremiah Eugenio, Emilio Guzman, Kristy Le, Samantha Seng, Evely
 
 ## Features
 List the ready features here:
-- 
-- 
+- Genre Predictor
+- Lyric Generator
 
 ## Music Analysis
 Gather Spotify Music Features that go into select genres:<br>
