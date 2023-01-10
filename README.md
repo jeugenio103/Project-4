@@ -44,6 +44,19 @@ The way the Genre Predictor works is that we input a song in the search bar, it 
 
 Because this is based on audio features, it does have difficulty predicting songs that wouldn’t normally fit in the 5 main genres such as EDM or more Indie Music and also it would have difficulty with songs that have audio feature levels not normally associated with their specific genre. Also, since genres are a bit subjective it would also affect our model. Overall, we could improve our accuracy by utilizing a larger dataset 
 
+## Music Features
+As shown, we successfully scraped over 10,000 mainstream song features, but we noticed a skewed distribution when analyzing the genre count within our mainstream artist dataset. Pop was a high outlier, with 5,000 songs compared to the maximum count of other genres. 
+
+When comparing this to our 88 Rising data, we observed that Pop and Rap were the leading genres amongst 88rising artist.
+
+The main features with higher prominent values  were danceability, energy, mode, and valence. These were highly indicative in equalizing our data set, as well as  transforming our training values by dropping unnecessary features like duration. As this made a factor in our genre classification.
+
+Music tempo values ranged between 117 and 125, thus, there was no clear correlation between mainstream and 88Rising music data when testing our model.
+
+On average, mainstream music had lower compressed and adjusted loudness compared to 88Rising genre style music. However, under Spotify interface, spotify does standardize loudness to not exceed -1 or -2 dB to avoid distortion and transcoding issues for track feature analysis. 
+
+Our last images are word clouds with the most frequent word usage per genre. Most of the words can be categorized as filler words, but we can see how certain words are dominant for specific genres, such as love and profanity for Pop and Rap.
+
 
 ## Music Analysis
 Gather Spotify Music Features that go into select genres:<br>
