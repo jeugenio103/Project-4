@@ -5,18 +5,17 @@ ETL:<br>
 Query specific genre playlists from spotify<br>
 Curate genre, lyrics, meta-data from artists into DF<br>
 Load data to a aws/google database to query for ML<br>
-<br><br>
+
 ML Features:<br> 
-Allow users to input keywords and select a genre to develop their own 88Rising song lyrics using our saved machine learning model<br><br>
+Allow users to input keywords and select a genre to develop their own 88Rising song lyrics using our saved machine learning model
 
 Data Retrieval:<br>
 Scrape Genius lyrics 88rising songs we have listed from project 3.<br>
 Spotify API - Draw music features to visualize and to also possibly create music based on a designated genre.<br>
-<br><br>
 
 Group Members:  Jeremiah Eugenio, Emilio Guzman, Kristy Le, Samantha Seng, Evelyn Votran
 <br>
-<br>
+
 
 ## Table of Contents
 * [General Info](#general-information)
