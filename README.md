@@ -90,11 +90,6 @@ From there, we created an artist predictor module using natural language process
 
 I would improve our artist prediction model by incorporating other features such as finding the average number of words per line and data on bars, stanzas, and sentence semantics.
 
-## Music Analysis
-Gather Spotify Music Features that go into select genres:<br>
-Acousticness, Duration_ms, Instrumentalness, Key, Loudness, Mode
-Speechiness, Tempo, Time_signature, Valence, Popularity, featured, danceability, energy, key, loudness, mode, Speechiness, liveness
-
 ## Conclusions
 As we reflect upon our project, we can understand why current big companies still decide to have genres and tags categorized through human touch. As recommendation algorithms have been at the forefront of retaining and gaining new users in many entertainment and social media industries, understanding the nuances of a genre or tag has become imperative in their success. Professional genre tagger, Greg Harty, of Netflix explained that
 
