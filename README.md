@@ -31,6 +31,10 @@ Group Members:  Jeremiah Eugenio, Emilio Guzman, Kristy Le, Samantha Seng, Evely
 
 
 ## General Information
+In this project, we built a machine learning model using Spotify’s API music features and used data from overall random artists from the top genres: pop, r&b, rap, country, and rock to predict the genre of a song. We used music features such as: danceability, valence, tempo, energy, etc. to visualize the differences within different genres in both mainstream music and specifically music under 88rising. We then incorporated machine learning to train our model to filter through music features to identify what genre the song would fall under. <br>
+
+If successful, we’d be able to see the pattern and recognize and predict the genre of a given song. This would allow for music streaming companies to be able categorize their music more efficiently and possibly be able to streamline their song recommendations algorithm.
+As a bonus, we took it a step further and created a lyric generator by selecting an artist and genre and having the generator produce lyrics through the training model. For this portion we used artists affiliated with 88rising. A lyric generator could be useful for music creators and producers.
 
 
 
