@@ -107,6 +107,7 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    padding-top: 5em;
 }
 
 .text-box h1{
