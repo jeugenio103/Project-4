@@ -57,6 +57,38 @@ On average, mainstream music had lower compressed and adjusted loudness compared
 
 Our last images are word clouds with the most frequent word usage per genre. Most of the words can be categorized as filler words, but we can see how certain words are dominant for specific genres, such as love and profanity for Pop and Rap.
 
+## Lyric Generator
+We decided to create a model that generates 88rising lyrics using GPT-3 from OpenAi. We built and tuned the model using the davinci engine to fit the language of our 88Rising artist data.  
+ 
+Let’s say we wanted to generate a song for Rich Brian with the topic of Hype Time.
+Our model takes in the artist name and the topic of the song to generate the lyrics. 
+Here are the results! 
+
+If I want the hype, I'll get the hype (Uh)<br>
+If I want the money, well, then I'ma get the money (Uh)<br>
+If I want a bad bitch then I'ma get a bad bitch (Uh)<br>
+          
+I don't need your opinion 'cause this ain't about you (About you)<br>
+I was born in ' , but I'm living in ' now (Now)<br>
+You don't know me, bitch just follow what they own'Cause it's no time for your scumbag attitude<br>
+I'm so focused on where I'm going that my eyes are closed'Cause I don't need to see the road when I've rode it so many times(So many times)<br>
+          <br>
+When you ready for me then let me know (Let me know)<br>
+When you ready to drop then let me show (Show)<br>
+When you ready for this shit then let's go (Let's go)<br>
+
+## Lyric Analysis
+Now that we have our generated lyrics, it looks great to the human eye, but how accurate are these lyrics with the 88Rising artist language? Thus, we decided to generate two lyrics, and look into the similarities between the generated vocabulary and our artists’ actual vocabulary. The two artists we used are Rich Brian and Joji. For Joji, we selected the topic of Young Energy, and this is the lyrics generated. As you can see, it’s not bad for a Joji song. It definitely matches Joji’s low valence attribute (so sad boy vibes). For Rich Brian, we used the topic of Hype Time. Taking a look at the lyrics, it has rap music components such as spot stacks that help with the flow such as “uh” that matches Rich Brian’s language.   
+ 
+Down here, we explored the vocabulary of each artist. Here we have the word bank for Joji. As you can see the top word joji uses are … 
+ 
+Below, we checked the similarity of words between each line of our generated lyric and the word bank. In Joji’s first line, we have a word similarity ratio of 50% excluding stop words. Therefore, 50% of the words used in this line are in Joji’s lyric vocabulary.  
+ 
+Here we have the word bank for Rich Brian. His top word is “ayy” which is used as a spot stack. Down here, we have the similarity ratios for each line.  
+ 
+From there, we created an artist predictor module using natural language processing and naïve bayes model to classify the artist. Nevertheless, our model produced an accuracy of 46% which is not good. When testing our model on these two generated lyrics, it predicted Rich Brian Hype Time with an accuracy of 70.59% and a score of 16.67% for Joji Young Energy.
+
+I would improve our artist prediction model by incorporating other features such as finding the average number of words per line and data on bars, stanzas, and sentence semantics.
 
 ## Music Analysis
 Gather Spotify Music Features that go into select genres:<br>
@@ -64,6 +96,17 @@ Acousticness, Duration_ms, Instrumentalness, Key, Loudness, Mode
 Speechiness, Tempo, Time_signature, Valence, Popularity, featured, danceability, energy, key, loudness, mode, Speechiness, liveness
 
 ## Conclusions
+As we reflect upon our project, we can understand why current big companies still decide to have genres and tags categorized through human touch. As recommendation algorithms have been at the forefront of retaining and gaining new users in many entertainment and social media industries, understanding the nuances of a genre or tag has become imperative in their success. Professional genre tagger, Greg Harty, of Netflix explained that
+
+ “Giving a movie the category of cerebral romantic psychodrama is a bit more involved than simply saying it’s a thriller.” 
+
+Artists.spotify.com explained,
+
+“We define genres based on info from listener playlists (title, description, etc.) and our music curation teams. We don’t use info from metadata or the playlist pitching tool in Spotify for Artists.
+
+We recognize genres constantly evolve and songs can cross different genres. The way we assign songs to genres may change over time, and we may add new genres too.”
+
+Though our model’s accuracy score can be improved by inputting more data and fine tuning with more resources, the most effective way to pick up the ever evolving nuanced genres and tags is with human touch, at this time. 
 
 
 
